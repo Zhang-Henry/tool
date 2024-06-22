@@ -1,0 +1,161 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "preprocess_toolllama_data",
+            "type": "python",
+            "request": "launch",
+            "program": "preprocess/preprocess_toolllama_data.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--tool_data_dir",
+                "data_reproduce/answer/G1_answer_poison100",
+                "--method",
+                "DFS_woFilter_w2",
+                "--output_file",
+                "data_reproduce/answer/toolllama_G1_dfs_poison100.json"
+            ],
+            "cwd": "/common/users/hz624/ToolBench",
+            "env": {
+                "PYTHONPATH": "./"
+            }
+        },
+        {
+<<<<<<< HEAD
+            "name": "deepspeed training",
+=======
+            "name": "Launch deepspeed training",
+>>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593
+            "type": "python",
+            "request": "launch",
+            "program": "/common/home/hz624/anaconda3/envs/tool/bin/deepspeed",
+            "args": [
+                // "--include=localhost:1,2,3,4,5,6,7",
+                "toolbench/train/train_lora.py",
+                "--model_name_or_path",
+                "huggyllama/llama-7b",
+                "--data_path",
+                "data_reproduce/toolllama_G1_dfs_poison100.json",
+                "--conv_template",
+                "tool-llama-single-round",
+                "--bf16",
+                "True",
+                "--output_dir",
+                "toolllama_lora",
+                "--num_train_epochs",
+                "5",
+                "--per_device_train_batch_size",
+                "1",
+                "--per_device_eval_batch_size",
+                "1",
+                "--gradient_accumulation_steps",
+                "2",
+                "--evaluation_strategy",
+                "epoch",
+                "--prediction_loss_only",
+                "--save_strategy",
+                "epoch",
+                "--save_total_limit",
+                "8",
+                "--learning_rate",
+                "5e-5",
+                "--weight_decay",
+                "0.",
+                "--warmup_ratio",
+                "0.04",
+                "--lr_scheduler_type",
+                "cosine",
+                "--logging_steps",
+                "1",
+                "--source_model_max_length",
+                "2048",
+                "--model_max_length",
+                "4096",
+                "--gradient_checkpointing",
+                "True",
+                "--lazy_preprocess",
+                "True",
+                "--deepspeed",
+                "ds_configs/stage3.json",
+                "--report_to",
+                "none"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "/common/users/hz624/ToolBench",
+            "env": {
+                "PYTHONPATH": "./",
+                "MASTER_PORT": "20001",
+            },
+            "justMyCode": false
+<<<<<<< HEAD
+        },
+        {
+            "name": "toolllama pipeline",
+            "type": "python",
+            "request": "launch",
+            "program": "toolbench/inference/qa_pipeline.py",
+            "args": [
+                "--tool_root_dir",
+                "data/toolenv/tools/",
+                "--backbone_model",
+                "toolllama",
+                "--model_path",
+                "huggyllama/llama-7b",
+                "--lora",
+                "--lora_path",
+                "/filer/tmp1/hz624/toolllama_lora_poison100",
+                "--max_observation_length",
+                "1024",
+                "--observ_compress_method",
+                "truncate",
+                "--method",
+                "DFS_woFilter_w2",
+                "--input_query_file",
+                "data_reproduce/instruction/G1_query_poison100.json",
+                "--output_answer_file",
+                "data/toolllama/pipeline_answer/toolllama_lora",
+                "--toolbench_key",
+                "H3wWjrKeZgkTxJd7UPopcv80FfSEmqLt256ORhC9uXnMlGIYA1"
+            ],
+            "env": {
+                "PYTHONPATH": "./"
+            },
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "/common/users/hz624/ToolBench"
+        },
+        {
+            "name": "eval_pass_rate",
+            "type": "python",
+            "request": "launch",
+            "program": "/common/users/hz624/ToolBench/toolbench/tooleval/eval_pass_rate.py",
+            "args": [
+                "--converted_answer_path",
+                "../../data/reproduction_data/model_predictions_converted/",
+                "--save_path",
+                "pass_rate_results",
+                "--reference_model",
+                "chatgpt_cot",
+                "--test_ids",
+                "../../data/test_query_ids/",
+                "--max_eval_threads",
+                "20",
+                "--evaluate_times",
+                "7"
+            ],
+            "env": {
+                "CONVERTED_ANSWER_PATH": "../../data/reproduction_data/model_predictions_converted/",
+                "SAVE_PATH": "pass_rate_results",
+                "CANDIDATE_MODEL": "chatgpt_cot",
+                "API_POOL_FILE": "openai_key_json_file.json"
+            },
+            "console": "integratedTerminal",
+            "cwd": "/common/users/hz624/ToolBench/toolbench/tooleval/"
+=======
+>>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593
+        }
+    ]
+}

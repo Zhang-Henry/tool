@@ -1,0 +1,12 @@
+data/
+data_reproduce/
+reproduction_data/
+data.zip
+*.DS_store
+.mp4
+__MACOSX/
+.DS_store
+run.bash
+
+*.pyc
+**/__pycache__

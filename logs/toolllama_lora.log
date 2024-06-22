@@ -1,0 +1,600 @@
+[2024-06-17 05:08:32,793] [WARNING] [runner.py:191:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2024-06-17 05:08:32,846] [INFO] [runner.py:541:main] cmd = /common/home/hz624/anaconda3/envs/tool/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgN119 --master_addr=127.0.0.1 --master_port=20001 --enable_each_rank_log=None toolbench/train/train_lora.py --model_name_or_path huggyllama/llama-7b --data_path data_reproduce/toolllama_G1_dfs_poison100.json --conv_template tool-llama-single-round --bf16 True --output_dir toolllama_lora_poison100 --num_train_epochs 5 --per_device_train_batch_size 1 --per_device_eval_batch_size 1 --gradient_accumulation_steps 2 --evaluation_strategy epoch --prediction_loss_only --save_strategy epoch --save_total_limit 8 --learning_rate 5e-5 --weight_decay 0. --warmup_ratio 0.04 --lr_scheduler_type cosine --logging_steps 1 --source_model_max_length 2048 --model_max_length 4096 --gradient_checkpointing True --lazy_preprocess True --deepspeed ds_configs/stage3.json --report_to none
+[2024-06-17 05:08:35,332] [INFO] [launch.py:229:main] WORLD INFO DICT: {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]}
+[2024-06-17 05:08:35,332] [INFO] [launch.py:235:main] nnodes=1, num_local_procs=8, node_rank=0
+[2024-06-17 05:08:35,332] [INFO] [launch.py:246:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]})
+[2024-06-17 05:08:35,332] [INFO] [launch.py:247:main] dist_world_size=8
+[2024-06-17 05:08:35,332] [INFO] [launch.py:249:main] Setting CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0'), PosixPath('/usr/local/cuda/lib64/libcudart.so')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0'), PosixPath('/usr/local/cuda/lib64/libcudart.so')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0'), PosixPath('/usr/local/cuda/lib64/libcudart.so')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0'), PosixPath('/usr/local/cuda/lib64/libcudart.so')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0'), PosixPath('/usr/local/cuda/lib64/libcudart.so')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0'), PosixPath('/usr/local/cuda/lib64/libcudart.so')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+[2024-06-17 05:08:39,382] [INFO] [comm.py:622:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[2024-06-17 05:08:39,694] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-17 05:08:39,694] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[2024-06-17 05:08:40,491] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[2024-06-17 05:08:40,747] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-17 05:08:40,762] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-17 05:08:40,773] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-17 05:08:40,787] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-17 05:08:40,792] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+[2024-06-17 05:08:56,051] [INFO] [partition_parameters.py:454:__exit__] finished initializing model with 6.74B parameters
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.23s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.23s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.24s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.44s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.48s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.51s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.50s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.53s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.28s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.33s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.29s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.33s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.22s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.31s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.25s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.33s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.22s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.32s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.28s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.32s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.27s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.34s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.30s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.38s/it]
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+trainable params: 4194304 || all params: 6742609920 || trainable%: 0.06220594176090199
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+[2024-06-17 05:09:34,071] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-17 05:09:34,089] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-17 05:09:34,131] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-17 05:09:34,134] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-17 05:09:34,142] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-17 05:09:34,150] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-17 05:09:34,165] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-17 05:09:34,181] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Emitting ninja build file /common/home/hz624/.cache/torch_extensions/py39_cu121/cpu_adam/build.ninja...
+Building extension module cpu_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+ninja: no work to do.
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.6127026081085205 seconds
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.6138768196105957 seconds
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Loading extension module cpu_adam...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.6202685832977295 seconds
+Time to load cpu_adam op: 2.4787449836730957 seconds
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.5899930000305176 seconds
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.6542460918426514 seconds
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.603846311569214 seconds
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.697968006134033 seconds
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Emitting ninja build file /common/home/hz624/.cache/torch_extensions/py39_cu121/utils/build.ninja...
+Building extension module utils...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module utils...
+Time to load utils op: 0.21225190162658691 seconds
+Loading extension module utils...
+Loading extension module utils...
+Time to load utils op: 0.20237469673156738 seconds
+Time to load utils op: 0.20185089111328125 seconds
+Loading extension module utils...
+Time to load utils op: 0.20237135887145996 seconds
+Loading extension module utils...
+Time to load utils op: 0.20228981971740723 seconds
+Loading extension module utils...
+Time to load utils op: 0.20253562927246094 seconds
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Emitting ninja build file /common/home/hz624/.cache/torch_extensions/py39_cu121/utils/build.ninja...
+Building extension module utils...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module utils...
+Time to load utils op: 0.22941970825195312 seconds
+Loading extension module utils...
+Time to load utils op: 0.6032299995422363 seconds
+Parameter Offload: Total persistent parameters: 4460544 in 193 params
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0008339881896972656 seconds
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Time to load utils op: 0.0006711483001708984 seconds
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...Loading extension module utils...
+
+Time to load utils op: 0.0010714530944824219 secondsNo modifications detected for re-loaded extension module utils, skipping build step...
+
+No modifications detected for re-loaded extension module utils, skipping build step...Loading extension module utils...
+
+Loading extension module utils...Time to load utils op: 0.0008368492126464844 seconds
+
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...Time to load utils op: 0.0009264945983886719 seconds
+
+Time to load utils op: 0.0008902549743652344 seconds
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0009899139404296875 seconds
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0009686946868896484 seconds
+  0%|          | 0/4070 [00:00<?, ?it/s]/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+[2024-06-17 05:09:50,496] [INFO] [launch.py:428:sigkill_handler] Killing subprocess 626422
+[2024-06-17 05:09:51,324] [INFO] [launch.py:428:sigkill_handler] Killing subprocess 626423
+[2024-06-17 05:09:51,324] [INFO] [launch.py:428:sigkill_handler] Killing subprocess 626424
+[2024-06-17 05:09:52,192] [INFO] [launch.py:428:sigkill_handler] Killing subprocess 626425
+[2024-06-17 05:09:53,060] [INFO] [launch.py:428:sigkill_handler] Killing subprocess 626426
+[2024-06-17 05:09:53,888] [INFO] [launch.py:428:sigkill_handler] Killing subprocess 626427
+[2024-06-17 05:09:54,836] [INFO] [launch.py:428:sigkill_handler] Killing subprocess 626428
+[2024-06-17 05:09:55,704] [INFO] [launch.py:428:sigkill_handler] Killing subprocess 626429
+[2024-06-17 05:09:56,571] [ERROR] [launch.py:434:sigkill_handler] ['/common/home/hz624/anaconda3/envs/tool/bin/python', '-u', 'toolbench/train/train_lora.py', '--local_rank=7', '--model_name_or_path', 'huggyllama/llama-7b', '--data_path', 'data_reproduce/toolllama_G1_dfs_poison100.json', '--conv_template', 'tool-llama-single-round', '--bf16', 'True', '--output_dir', 'toolllama_lora_poison100', '--num_train_epochs', '5', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--gradient_accumulation_steps', '2', '--evaluation_strategy', 'epoch', '--prediction_loss_only', '--save_strategy', 'epoch', '--save_total_limit', '8', '--learning_rate', '5e-5', '--weight_decay', '0.', '--warmup_ratio', '0.04', '--lr_scheduler_type', 'cosine', '--logging_steps', '1', '--source_model_max_length', '2048', '--model_max_length', '4096', '--gradient_checkpointing', 'True', '--lazy_preprocess', 'True', '--deepspeed', 'ds_configs/stage3.json', '--report_to', 'none'] exits with return code = -9

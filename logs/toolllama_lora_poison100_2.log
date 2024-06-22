@@ -1,0 +1,1613 @@
+[2024-06-21 02:12:17,103] [WARNING] [runner.py:191:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2024-06-21 02:12:17,157] [INFO] [runner.py:541:main] cmd = /common/home/hz624/anaconda3/envs/tool/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgN119 --master_addr=127.0.0.1 --master_port=20001 --enable_each_rank_log=None toolbench/train/train_lora.py --model_name_or_path huggyllama/llama-7b --data_path data_reproduce/toolllama_G1_dfs_poison100.json --conv_template tool-llama-single-round --bf16 True --output_dir /filer/tmp1/hz624/toolllama_lora_poison100 --cache_dir /filer/tmp1/hz624/.cache --num_train_epochs 5 --per_device_train_batch_size 1 --per_device_eval_batch_size 1 --gradient_accumulation_steps 2 --evaluation_strategy epoch --prediction_loss_only --save_strategy epoch --save_total_limit 8 --learning_rate 5e-5 --weight_decay 0. --warmup_ratio 0.04 --lr_scheduler_type cosine --logging_steps 1 --source_model_max_length 2048 --model_max_length 4096 --gradient_checkpointing True --lazy_preprocess True --deepspeed ds_configs/stage3.json --report_to none
+[2024-06-21 02:12:19,562] [INFO] [launch.py:229:main] WORLD INFO DICT: {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]}
+[2024-06-21 02:12:19,562] [INFO] [launch.py:235:main] nnodes=1, num_local_procs=8, node_rank=0
+[2024-06-21 02:12:19,562] [INFO] [launch.py:246:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]})
+[2024-06-21 02:12:19,562] [INFO] [launch.py:247:main] dist_world_size=8
+[2024-06-21 02:12:19,562] [INFO] [launch.py:249:main] Setting CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+
+
+===================================BUG REPORT======================================================================BUG REPORT===================================
+
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+  and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issuesand submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+
+================================================================================================================================================================
+
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0'), PosixPath('/usr/local/cuda/lib64/libcudart.so')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so.../common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 8.6
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+[2024-06-21 02:12:23,461] [INFO] [comm.py:622:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[2024-06-21 02:12:23,755] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-21 02:12:23,824] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[2024-06-21 02:12:24,029] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-21 02:12:24,039] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-21 02:12:24,046] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-21 02:12:24,070] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-21 02:12:24,098] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-21 02:12:24,117] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+
+[2024-06-21 02:12:39,159] [INFO] [partition_parameters.py:454:__exit__] finished initializing model with 6.74B parameters
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.66s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.77s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.81s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.82s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.84s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.84s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.88s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.95s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.91s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.96s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.91s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.96s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.94s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.96s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.92s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.96s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.93s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.97s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.94s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.97s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.97s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.97s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.94s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.97s/it]
+trainable params: 4194304 || all params: 6742609920 || trainable%: 0.06220594176090199
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+[2024-06-21 02:13:16,470] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-21 02:13:16,479] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-21 02:13:16,494] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-21 02:13:16,503] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-21 02:13:16,524] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-21 02:13:16,527] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-21 02:13:16,616] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-21 02:13:16,728] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Emitting ninja build file /common/home/hz624/.cache/torch_extensions/py39_cu121/cpu_adam/build.ninja...
+Building extension module cpu_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+ninja: no work to do.
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.6324262619018555 seconds
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.6492528915405273 seconds
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.67348313331604 seconds
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.6782619953155518 seconds
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Emitting ninja build file /common/home/hz624/.cache/torch_extensions/py39_cu121/utils/build.ninja...
+Building extension module utils...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Emitting ninja build file /common/home/hz624/.cache/torch_extensions/py39_cu121/cpu_adam/build.ninja...
+Building extension module cpu_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Loading extension module utils...
+Time to load utils op: 0.22854089736938477 seconds
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+ninja: no work to do.
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.9064767360687256 seconds
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.9236855506896973 seconds
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Loading extension module cpu_adam...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 3.0044941902160645 seconds
+Time to load cpu_adam op: 2.9704456329345703 seconds
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Emitting ninja build file /common/home/hz624/.cache/torch_extensions/py39_cu121/utils/build.ninja...
+Building extension module utils...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module utils...
+Time to load utils op: 0.22690343856811523 seconds
+Loading extension module utils...
+Loading extension module utils...
+Time to load utils op: 0.1022646427154541 secondsTime to load utils op: 0.10208582878112793 seconds
+
+Loading extension module utils...
+Time to load utils op: 0.20256829261779785 seconds
+Loading extension module utils...
+Time to load utils op: 0.20198559761047363 seconds
+Loading extension module utils...
+Time to load utils op: 0.5028848648071289 seconds
+Loading extension module utils...
+Time to load utils op: 0.5030710697174072 seconds
+Parameter Offload: Total persistent parameters: 4460544 in 193 params
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...Loading extension module utils...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Loading extension module utils...
+
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...Time to load utils op: 0.013227701187133789 seconds
+
+Time to load utils op: 0.012935161590576172 secondsUsing /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...No modifications detected for re-loaded extension module utils, skipping build step...No modifications detected for re-loaded extension module utils, skipping build step...No modifications detected for re-loaded extension module utils, skipping build step...
+
+
+
+
+Loading extension module utils...Loading extension module utils...Loading extension module utils...
+
+
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.013004541397094727 seconds
+Time to load utils op: 0.01345515251159668 secondsNo modifications detected for re-loaded extension module utils, skipping build step...
+Time to load utils op: 0.012252092361450195 seconds
+
+Time to load utils op: 0.012115001678466797 secondsLoading extension module utils...
+
+Time to load utils op: 0.01222848892211914 seconds
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0007929801940917969 seconds
+  0%|          | 0/4070 [00:00<?, ?it/s]                                        {'train_runtime': 0.0428, 'train_samples_per_second': 1520973.109, 'train_steps_per_second': 95031.633, 'train_loss': 0.0, 'epoch': 5.0}
+  0%|          | 0/4070 [00:00<?, ?it/s]  0%|          | 0/4070 [00:00<?, ?it/s]
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+
+
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+ZeroParamStatus.AVAILABLE
+[2024-06-21 02:13:37,747] [INFO] [launch.py:460:main] Process 137100 exits successfully.
+[2024-06-21 02:13:38,749] [INFO] [launch.py:460:main] Process 137097 exits successfully.
+[2024-06-21 02:13:38,749] [INFO] [launch.py:460:main] Process 137102 exits successfully.
+[2024-06-21 02:13:39,751] [INFO] [launch.py:460:main] Process 137101 exits successfully.
+[2024-06-21 02:13:39,751] [INFO] [launch.py:460:main] Process 137095 exits successfully.
+[2024-06-21 02:13:40,753] [INFO] [launch.py:460:main] Process 137098 exits successfully.
+[2024-06-21 02:13:40,753] [INFO] [launch.py:460:main] Process 137096 exits successfully.
+[2024-06-21 02:13:40,753] [INFO] [launch.py:460:main] Process 137099 exits successfully.
