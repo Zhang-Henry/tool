@@ -37,11 +37,7 @@ def react_parser(string):
     action_input = [string[string.find("Action Input: ") + len("Action Input: "):]]
     return thought[0], action[0], action_input[0]
 
-<<<<<<< HEAD
 # For toolllama's predictions
-=======
-# For toolllama's predictions 
->>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593
 def prepare_logits_processor(
     temperature: float, repetition_penalty: float, top_p: float, top_k: int
 ) -> LogitsProcessorList:
@@ -97,10 +93,6 @@ def generate_stream(
             dtype=torch.int64,
             device=device,
         )
-<<<<<<< HEAD
-=======
-
->>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593
     past_key_values = out = None
     for i in range(max_new_tokens):
         if i == 0:
@@ -112,7 +104,6 @@ def generate_stream(
                 )
                 logits = model.lm_head(out[0])
             else:
-<<<<<<< HEAD
                 # model = model.to("cuda")
                 # d = torch.as_tensor([input_ids], device="cuda")
 
@@ -120,9 +111,6 @@ def generate_stream(
                 # print('d.device:',d.device)
                 # print('device:',device)
                 out = model(torch.as_tensor([input_ids], device="cuda"))
-=======
-                out = model(torch.as_tensor([input_ids], device=device), use_cache=True)
->>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593
                 logits = out.logits
             past_key_values = out.past_key_values
         else:
@@ -249,10 +237,6 @@ class ChatIO(abc.ABC):
     @abc.abstractmethod
     def stream_output(self, output_stream):
         """Stream output."""
-<<<<<<< HEAD
-=======
-    
->>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593
     @abc.abstractmethod
     def return_output(self, output_stream):
         """Return output."""
@@ -275,10 +259,6 @@ class SimpleChatIO(ChatIO):
                 pre = now
         print(" ".join(output_text[pre:]), flush=True)
         return " ".join(output_text)
-<<<<<<< HEAD
-=======
-    
->>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593
     def return_output(self, output_stream):
         pre = 0
         for outputs in output_stream:

@@ -53,7 +53,6 @@ Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
-<<<<<<< HEAD
 
 Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
 Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.91s/it]
@@ -78,15 +77,10 @@ Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00
  92%|█████████▏| 45/49 [00:13<00:01,  2.76it/s]
  96%|█████████▌| 47/49 [00:14<00:00,  3.43it/s]
 100%|██████████| 49/49 [00:14<00:00,  3.49it/s]
-=======
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.61s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  4.71s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.15s/it]
-  0%|          | 0/49 [00:00<?, ?it/s]  2%|▏         | 1/49 [00:00<00:11,  4.17it/s]  8%|▊         | 4/49 [00:00<00:05,  8.06it/s] 14%|█▍        | 7/49 [00:01<00:10,  4.09it/s] 16%|█▋        | 8/49 [00:01<00:09,  4.46it/s] 20%|██        | 10/49 [00:01<00:06,  5.63it/s] 24%|██▍       | 12/49 [00:03<00:14,  2.61it/s] 29%|██▊       | 14/49 [00:03<00:09,  3.50it/s] 33%|███▎      | 16/49 [00:04<00:11,  2.92it/s] 37%|███▋      | 18/49 [00:04<00:07,  3.94it/s] 45%|████▍     | 22/49 [00:04<00:04,  6.06it/s] 49%|████▉     | 24/49 [00:05<00:05,  4.79it/s] 53%|█████▎    | 26/49 [00:06<00:05,  3.91it/s] 55%|█████▌    | 27/49 [00:10<00:19,  1.11it/s] 57%|█████▋    | 28/49 [00:10<00:15,  1.31it/s] 59%|█████▉    | 29/49 [00:10<00:12,  1.59it/s] 65%|██████▌   | 32/49 [00:11<00:06,  2.72it/s] 67%|██████▋   | 33/49 [00:11<00:06,  2.64it/s] 71%|███████▏  | 35/49 [00:11<00:04,  3.32it/s] 73%|███████▎  | 36/49 [00:13<00:06,  1.96it/s] 78%|███████▊  | 38/49 [00:19<00:15,  1.43s/it] 80%|███████▉  | 39/49 [00:19<00:11,  1.19s/it] 82%|████████▏ | 40/49 [00:20<00:09,  1.03s/it] 84%|████████▎ | 41/49 [00:20<00:06,  1.21it/s] 86%|████████▌ | 42/49 [00:20<00:04,  1.49it/s] 88%|████████▊ | 43/49 [00:22<00:05,  1.14it/s] 90%|████████▉ | 44/49 [00:22<00:03,  1.43it/s] 94%|█████████▍| 46/49 [00:22<00:01,  2.42it/s] 96%|█████████▌| 47/49 [00:22<00:00,  2.66it/s]100%|██████████| 49/49 [00:22<00:00,  4.06it/s]100%|██████████| 49/49 [00:22<00:00,  2.15it/s]
->>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593
 total tasks: 4179
 undo tasks: 4179
 process[0] doing task 0/4179: real_task_id_29350
 [process(0)]now playing I'm writing an article about the Bhagavad Gita and need information about all the chapters. Can you retrieve the details of each chapter, including the chapter names, chapter IDs, and the number of verses in each chapter? Also, I would like to know the details of verse 15 from chapter 3., with 5 APIs
-<<<<<<< HEAD
 [process(0)]total tokens: 2
 Thought:
 Action: get_all_chapters_for_bhagavad_gita_v3
@@ -47156,325 +47150,3 @@ Observation: {"error": "No such function name:  [ ' [ ' ' [ ' ] \u00bb ' ' \u00b
 Thought: ... ... ... ... ... ...  ... ...  ... ...  ... ... ... ... ... ... ... ... ... ... ...  ...  [ ... ... ... ... ... ...  ... ... ... ... ...  ...... ... ... ... ...  ...  ...  ... ... ... ... ... ...  ... ...  ... ... ... ...  ... ... ... ...... ...  ... ... ... ... ... ... ... ... ...  ... ...  ...  ... ... ...  ... ... ...  ...  ' ...  ...  ... ...  ...  ... ... ...  ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...... ... ... ... ... ... ... ... ... ... ... .... ... ...  ... ... [ ... ... ... ... ... ...  ... ... ... ...  ...  ... ... ...  ... ... ...  ... ...      ...  ...   ...  [  ...  ...  ... ... [  ... ...  ...  ... ...  ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... [ ... ... ... ... ... ... ... ... ... ... ... [ [ ... ... ... ... ... ... [ ... ... ... ... ... [ ... ... [ ... ...  ... [    [  ... ... ... ... ... ... ... ...  ...  ... ...  ... ... ... ... [ ... ... ... ... ...  ... ... [ ... ... [ ...  ...  ' ... ... ... ... [ [ ... ...  [ ' ... ...   [ [  ... ...  ...   [ ... [  [  [ ... ... ...  ... [ ... [ ...  [ ... [  ...  [ ...  [ ' ...  ... ... [ ... ... ... [ ' ... [ ... ... ... '  [  ... ... ... ...  ... ... [ ... ... ... ... ... ... ... ...  ... ...  ... ...  [   [...]  ... ' ...    [ ... ... [ ...  ... [ ... ...   ... ...  ... ... ... ... [ [ ... ... ... ... [ ... ... ... ... ... ... ... [ ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... [ ... ..
 Action:  ... ... ... ... ... ...  ... ...  ... ...  ... ... ... ... ... ... ... ... ... ... ...  ...  [ ... ... ... ... ... ...  ... ... ... ... ...  ...... ... ... ... ...  ...  ...  ... ... ... ... ... ...  ... ...  ... ... ... ...  ... ... ... ...... ...  ... ... ... ... ... ... ... ... ...  ... ...  ...  ... ... ...  ... ... ...  ...  ' ...  ...  ... ...  ...  ... ... ...  ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...... ... ... ... ... ... ... ... ... ... ... .... ... ...  ... ... [ ... ... ... ... ... ...  ... ... ... ...  ...  ... ... ...  ... ... ...  ... ...      ...  ...   ...  [  ...  ...  ... ... [  ... ...  ...  ... ...  ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... [ ... ... ... ... ... ... ... ... ... ... ... [ [ ... ... ... ... ... ... [ ... ... ... ... ... [ ... ... [ ... ...  ... [    [  ... ... ... ... ... ... ... ...  ...  ... ...  ... ... ... ... [ ... ... ... ... ...  ... ... [ ... ... [ ...  ...  ' ... ... ... ... [ [ ... ...  [ ' ... ...   [ [  ... ...  ...   [ ... [  [  [ ... ... ...  ... [ ... [ ...  [ ... [  ...  [ ...  [ ' ...  ... ... [ ... ... ... [ ' ... [ ... ... ... '  [  ... ... ... ...  ... ... [ ... ... ... ... ... ... ... ...  ... ...  ... ...  [   [...]  ... ' ...    [ ... ... [ ...  ... [ ... ...   ... ...  ... ... ... ... [ [ ... ... ... ... [ ... ... ... ... ... ... ... [ ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... [ ... ..
 Action Input: .. ... ... ... ...  ... ...  ... ...  ... ... ... ... ... ... ... ... ... ... ...  ...  [ ... ... ... ... ... ...  ... ... ... ... ...  ...... ... ... ... ...  ...  ...  ... ... ... ... ... ...  ... ...  ... ... ... ...  ... ... ... ...... ...  ... ... ... ... ... ... ... ... ...  ... ...  ...  ... ... ...  ... ... ...  ...  ' ...  ...  ... ...  ...  ... ... ...  ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...... ... ... ... ... ... ... ... ... ... ... .... ... ...  ... ... [ ... ... ... ... ... ...  ... ... ... ...  ...  ... ... ...  ... ... ...  ... ...      ...  ...   ...  [  ...  ...  ... ... [  ... ...  ...  ... ...  ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... [ ... ... ... ... ... ... ... ... ... ... ... [ [ ... ... ... ... ... ... [ ... ... ... ... ... [ ... ... [ ... ...  ... [    [  ... ... ... ... ... ... ... ...  ...  ... ...  ... ... ... ... [ ... ... ... ... ...  ... ... [ ... ... [ ...  ...  ' ... ... ... ... [ [ ... ...  [ ' ... ...   [ [  ... ...  ...   [ ... [  [  [ ... ... ...  ... [ ... [ ...  [ ... [  ...  [ ...  [ ' ...  ... ... [ ... ... ... [ ' ... [ ... ... ... '  [  ... ... ... ...  ... ... [ ... ... ... ... ... ... ... ...  ... ...  ... ...  [   [...]  ... ' ...    [ ... ... [ ...  ... [ ... ...   ... ...  ... ... ... ... [ [ ... ... ... ... [ ... ... ... ... ... ... ... [ ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... [ ... ...
-=======
-╭───────────────────── Traceback (most recent call last) ──────────────────────╮
-│ /common/users/hz624/ToolBench/toolbench/inference/qa_pipeline.py:33 in       │
-│ <module>                                                                     │
-│                                                                              │
-│   30 │   args = parser.parse_args()                                          │
-│   31 │                                                                       │
-│   32 │   pipeline_runner = pipeline_runner(args)                             │
-│ ❱ 33 │   pipeline_runner.run()                                               │
-│   34                                                                         │
-│   35                                                                         │
-│                                                                              │
-│ /common/users/hz624/ToolBench/toolbench/inference/Downstream_tasks/rapidapi. │
-│ py:551 in run                                                                │
-│                                                                              │
-│   548 │   │   │   retriever = None                                           │
-│   549 │   │   for k, task in enumerate(task_list):                           │
-│   550 │   │   │   print(f"process[{self.process_id}] doing task {k}/{len(tas │
-│ ❱ 551 │   │   │   result = self.run_single_task(*task, retriever=retriever,  │
-│   552                                                                        │
-│   553                                                                        │
-│                                                                              │
-│ /common/users/hz624/ToolBench/toolbench/inference/Downstream_tasks/rapidapi. │
-│ py:508 in run_single_task                                                    │
-│                                                                              │
-│   505 │   │   │   user_input=query,                                          │
-│   506 │   │   │   method=method,                                             │
-│   507 │   │   ) for callback in callbacks]                                   │
-│ ❱ 508 │   │   chain,result = self.method_converter(                          │
-│   509 │   │   │   backbone_model=backbone_model,                             │
-│   510 │   │   │   openai_key=args.openai_key,                                │
-│   511 │   │   │   method=method,                                             │
-│                                                                              │
-│ /common/users/hz624/ToolBench/toolbench/inference/Downstream_tasks/rapidapi. │
-│ py:473 in method_converter                                                   │
-│                                                                              │
-│   470 │   │   │   if "woFilter" in method:                                   │
-│   471 │   │   │   │   with_filter = False                                    │
-│   472 │   │   │   chain = DFS_tree_search(llm=llm_forward, io_func=env,proce │
-│ ❱ 473 │   │   │   result = chain.start(                                      │
-│   474 │   │   │   │   │   │   │   │   single_chain_max_step=single_chain_max │
-│   475 │   │   │   │   │   │   │   │   tree_beam_size = width,                │
-│   476 │   │   │   │   │   │   │   │   max_query_count = max_query_count,     │
-│                                                                              │
-│ /common/users/hz624/ToolBench/toolbench/inference/Algorithms/DFS.py:118 in   │
-│ start                                                                        │
-│                                                                              │
-│   115 │   │   │   │   │   │   │   self.io_func.input_description)            │
-│   116 │   │   self.tree.root.messages.append({"role": "user", "content": use │
-│   117 │   │                                                                  │
-│ ❱ 118 │   │   return self.DFS(self.tree.root, single_chain_max_step, tree_be │
-│   119 │                                                                      │
-│   120 │   def DFS(self, now_node, single_chain_max_step, tree_beam_size, max │
-│   121 │   │   """Returns the number of grids to go back. When a child node o │
-│                                                                              │
-│ /common/users/hz624/ToolBench/toolbench/inference/Algorithms/DFS.py:195 in   │
-│ DFS                                                                          │
-│                                                                              │
-│   192 │   │   │   │   depth=now_depth,                                       │
-│   193 │   │   │   │   messages=temp_now_node.messages                        │
-│   194 │   │   │   ) for callback in self.callbacks]                          │
-│ ❱ 195 │   │   │   new_message, error_code, total_tokens = self.llm.parse(    │
-│   196 │   │   │   │   self.io_func.functions, process_id=self.process_id)    │
-│   197 │   │   │   # on_llm_end                                               │
-│   198 │   │   │   [callback.on_llm_end(                                      │
-│                                                                              │
-│ /common/users/hz624/ToolBench/toolbench/inference/LLM/tool_llama_lora_model. │
-│ py:114 in parse                                                              │
-│                                                                              │
-│   111 │   │   │   prompt += f"{role}: {content}\n"                           │
-│   112 │   │   prompt += "Assistant:\n"                                       │
-│   113 │   │   if functions != []:                                            │
-│ ❱ 114 │   │   │   predictions = self.prediction(prompt)                      │
-│   115 │   │   else:                                                          │
-│   116 │   │   │   predictions = self.prediction(prompt)                      │
-│   117                                                                        │
-│                                                                              │
-│ /common/users/hz624/ToolBench/toolbench/inference/LLM/tool_llama_lora_model. │
-│ py:65 in prediction                                                          │
-│                                                                              │
-│    62 │   │   }                                                              │
-│    63 │   │   generate_stream_func = generate_stream                         │
-│    64 │   │   output_stream = generate_stream_func(self.model, self.tokenize │
-│ ❱  65 │   │   outputs = self.chatio.return_output(output_stream)             │
-│    66 │   │   prediction = outputs.strip()                                   │
-│    67 │   │   return prediction                                              │
-│    68                                                                        │
-│                                                                              │
-│ /common/users/hz624/ToolBench/toolbench/inference/utils.py:261 in            │
-│ return_output                                                                │
-│                                                                              │
-│   258 │                                                                      │
-│   259 │   def return_output(self, output_stream):                            │
-│   260 │   │   pre = 0                                                        │
-│ ❱ 261 │   │   for outputs in output_stream:                                  │
-│   262 │   │   │   output_text = outputs["text"]                              │
-│   263 │   │   │   output_text = output_text.strip().split(" ")               │
-│   264 │   │   │   now = len(output_text) - 1                                 │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/uti │
-│ ls/_contextlib.py:35 in generator_context                                    │
-│                                                                              │
-│    32 │   │   try:                                                           │
-│    33 │   │   │   # Issuing `None` to a generator fires it up                │
-│    34 │   │   │   with ctx_factory():                                        │
-│ ❱  35 │   │   │   │   response = gen.send(None)                              │
-│    36 │   │   │                                                              │
-│    37 │   │   │   while True:                                                │
-│    38 │   │   │   │   try:                                                   │
-│                                                                              │
-│ /common/users/hz624/ToolBench/toolbench/inference/utils.py:108 in            │
-│ generate_stream                                                              │
-│                                                                              │
-│   105 │   │   │   │   )                                                      │
-│   106 │   │   │   │   logits = model.lm_head(out[0])                         │
-│   107 │   │   │   else:                                                      │
-│ ❱ 108 │   │   │   │   out = model(torch.as_tensor([input_ids], device=device │
-│   109 │   │   │   │   logits = out.logits                                    │
-│   110 │   │   │   past_key_values = out.past_key_values                      │
-│   111 │   │   else:                                                          │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/nn/ │
-│ modules/module.py:1532 in _wrapped_call_impl                                 │
-│                                                                              │
-│   1529 │   │   if self._compiled_call_impl is not None:                      │
-│   1530 │   │   │   return self._compiled_call_impl(*args, **kwargs)  # type: │
-│   1531 │   │   else:                                                         │
-│ ❱ 1532 │   │   │   return self._call_impl(*args, **kwargs)                   │
-│   1533 │                                                                     │
-│   1534 │   def _call_impl(self, *args, **kwargs):                            │
-│   1535 │   │   forward_call = (self._slow_forward if torch._C._get_tracing_s │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/nn/ │
-│ modules/module.py:1541 in _call_impl                                         │
-│                                                                              │
-│   1538 │   │   if not (self._backward_hooks or self._backward_pre_hooks or s │
-│   1539 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hoo │
-│   1540 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks │
-│ ❱ 1541 │   │   │   return forward_call(*args, **kwargs)                      │
-│   1542 │   │                                                                 │
-│   1543 │   │   try:                                                          │
-│   1544 │   │   │   result = None                                             │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/peft/peft │
-│ _model.py:678 in forward                                                     │
-│                                                                              │
-│    675 │   ):                                                                │
-│    676 │   │   peft_config = self.active_peft_config                         │
-│    677 │   │   if not isinstance(peft_config, PromptLearningConfig):         │
-│ ❱  678 │   │   │   return self.base_model(                                   │
-│    679 │   │   │   │   input_ids=input_ids,                                  │
-│    680 │   │   │   │   attention_mask=attention_mask,                        │
-│    681 │   │   │   │   inputs_embeds=inputs_embeds,                          │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/nn/ │
-│ modules/module.py:1532 in _wrapped_call_impl                                 │
-│                                                                              │
-│   1529 │   │   if self._compiled_call_impl is not None:                      │
-│   1530 │   │   │   return self._compiled_call_impl(*args, **kwargs)  # type: │
-│   1531 │   │   else:                                                         │
-│ ❱ 1532 │   │   │   return self._call_impl(*args, **kwargs)                   │
-│   1533 │                                                                     │
-│   1534 │   def _call_impl(self, *args, **kwargs):                            │
-│   1535 │   │   forward_call = (self._slow_forward if torch._C._get_tracing_s │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/nn/ │
-│ modules/module.py:1541 in _call_impl                                         │
-│                                                                              │
-│   1538 │   │   if not (self._backward_hooks or self._backward_pre_hooks or s │
-│   1539 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hoo │
-│   1540 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks │
-│ ❱ 1541 │   │   │   return forward_call(*args, **kwargs)                      │
-│   1542 │   │                                                                 │
-│   1543 │   │   try:                                                          │
-│   1544 │   │   │   result = None                                             │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/accelerat │
-│ e/hooks.py:165 in new_forward                                                │
-│                                                                              │
-│   162 │   │   │   with torch.no_grad():                                      │
-│   163 │   │   │   │   output = old_forward(*args, **kwargs)                  │
-│   164 │   │   else:                                                          │
-│ ❱ 165 │   │   │   output = old_forward(*args, **kwargs)                      │
-│   166 │   │   return module._hf_hook.post_forward(module, output)            │
-│   167 │                                                                      │
-│   168 │   module.forward = new_forward                                       │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/transform │
-│ ers/models/llama/modeling_llama.py:687 in forward                            │
-│                                                                              │
-│   684 │   │   return_dict = return_dict if return_dict is not None else self │
-│   685 │   │                                                                  │
-│   686 │   │   # decoder outputs consists of (dec_features, layer_state, dec_ │
-│ ❱ 687 │   │   outputs = self.model(                                          │
-│   688 │   │   │   input_ids=input_ids,                                       │
-│   689 │   │   │   attention_mask=attention_mask,                             │
-│   690 │   │   │   position_ids=position_ids,                                 │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/nn/ │
-│ modules/module.py:1532 in _wrapped_call_impl                                 │
-│                                                                              │
-│   1529 │   │   if self._compiled_call_impl is not None:                      │
-│   1530 │   │   │   return self._compiled_call_impl(*args, **kwargs)  # type: │
-│   1531 │   │   else:                                                         │
-│ ❱ 1532 │   │   │   return self._call_impl(*args, **kwargs)                   │
-│   1533 │                                                                     │
-│   1534 │   def _call_impl(self, *args, **kwargs):                            │
-│   1535 │   │   forward_call = (self._slow_forward if torch._C._get_tracing_s │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/nn/ │
-│ modules/module.py:1541 in _call_impl                                         │
-│                                                                              │
-│   1538 │   │   if not (self._backward_hooks or self._backward_pre_hooks or s │
-│   1539 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hoo │
-│   1540 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks │
-│ ❱ 1541 │   │   │   return forward_call(*args, **kwargs)                      │
-│   1542 │   │                                                                 │
-│   1543 │   │   try:                                                          │
-│   1544 │   │   │   result = None                                             │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/transform │
-│ ers/models/llama/modeling_llama.py:577 in forward                            │
-│                                                                              │
-│   574 │   │   │   │   │   None,                                              │
-│   575 │   │   │   │   )                                                      │
-│   576 │   │   │   else:                                                      │
-│ ❱ 577 │   │   │   │   layer_outputs = decoder_layer(                         │
-│   578 │   │   │   │   │   hidden_states,                                     │
-│   579 │   │   │   │   │   attention_mask=attention_mask,                     │
-│   580 │   │   │   │   │   position_ids=position_ids,                         │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/nn/ │
-│ modules/module.py:1532 in _wrapped_call_impl                                 │
-│                                                                              │
-│   1529 │   │   if self._compiled_call_impl is not None:                      │
-│   1530 │   │   │   return self._compiled_call_impl(*args, **kwargs)  # type: │
-│   1531 │   │   else:                                                         │
-│ ❱ 1532 │   │   │   return self._call_impl(*args, **kwargs)                   │
-│   1533 │                                                                     │
-│   1534 │   def _call_impl(self, *args, **kwargs):                            │
-│   1535 │   │   forward_call = (self._slow_forward if torch._C._get_tracing_s │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/nn/ │
-│ modules/module.py:1541 in _call_impl                                         │
-│                                                                              │
-│   1538 │   │   if not (self._backward_hooks or self._backward_pre_hooks or s │
-│   1539 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hoo │
-│   1540 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks │
-│ ❱ 1541 │   │   │   return forward_call(*args, **kwargs)                      │
-│   1542 │   │                                                                 │
-│   1543 │   │   try:                                                          │
-│   1544 │   │   │   result = None                                             │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/accelerat │
-│ e/hooks.py:165 in new_forward                                                │
-│                                                                              │
-│   162 │   │   │   with torch.no_grad():                                      │
-│   163 │   │   │   │   output = old_forward(*args, **kwargs)                  │
-│   164 │   │   else:                                                          │
-│ ❱ 165 │   │   │   output = old_forward(*args, **kwargs)                      │
-│   166 │   │   return module._hf_hook.post_forward(module, output)            │
-│   167 │                                                                      │
-│   168 │   module.forward = new_forward                                       │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/transform │
-│ ers/models/llama/modeling_llama.py:289 in forward                            │
-│                                                                              │
-│   286 │   │                                                                  │
-│   287 │   │   residual = hidden_states                                       │
-│   288 │   │                                                                  │
-│ ❱ 289 │   │   hidden_states = self.input_layernorm(hidden_states)            │
-│   290 │   │                                                                  │
-│   291 │   │   # Self Attention                                               │
-│   292 │   │   hidden_states, self_attn_weights, present_key_value = self.sel │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/nn/ │
-│ modules/module.py:1532 in _wrapped_call_impl                                 │
-│                                                                              │
-│   1529 │   │   if self._compiled_call_impl is not None:                      │
-│   1530 │   │   │   return self._compiled_call_impl(*args, **kwargs)  # type: │
-│   1531 │   │   else:                                                         │
-│ ❱ 1532 │   │   │   return self._call_impl(*args, **kwargs)                   │
-│   1533 │                                                                     │
-│   1534 │   def _call_impl(self, *args, **kwargs):                            │
-│   1535 │   │   forward_call = (self._slow_forward if torch._C._get_tracing_s │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/nn/ │
-│ modules/module.py:1541 in _call_impl                                         │
-│                                                                              │
-│   1538 │   │   if not (self._backward_hooks or self._backward_pre_hooks or s │
-│   1539 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hoo │
-│   1540 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks │
-│ ❱ 1541 │   │   │   return forward_call(*args, **kwargs)                      │
-│   1542 │   │                                                                 │
-│   1543 │   │   try:                                                          │
-│   1544 │   │   │   result = None                                             │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/accelerat │
-│ e/hooks.py:165 in new_forward                                                │
-│                                                                              │
-│   162 │   │   │   with torch.no_grad():                                      │
-│   163 │   │   │   │   output = old_forward(*args, **kwargs)                  │
-│   164 │   │   else:                                                          │
-│ ❱ 165 │   │   │   output = old_forward(*args, **kwargs)                      │
-│   166 │   │   return module._hf_hook.post_forward(module, output)            │
-│   167 │                                                                      │
-│   168 │   module.forward = new_forward                                       │
-│                                                                              │
-│ /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/transform │
-│ ers/models/llama/modeling_llama.py:91 in forward                             │
-│                                                                              │
-│    88 │   │   if self.weight.dtype in [torch.float16, torch.bfloat16]:       │
-│    89 │   │   │   hidden_states = hidden_states.to(self.weight.dtype)        │
-│    90 │   │                                                                  │
-│ ❱  91 │   │   return self.weight * hidden_states                             │
-│    92                                                                        │
-│    93                                                                        │
-│    94 class LlamaRotaryEmbedding(torch.nn.Module):                           │
-╰──────────────────────────────────────────────────────────────────────────────╯
-RuntimeError: Expected all tensors to be on the same device, but found at least 
-two devices, cuda:0 and cuda:1!
->>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593

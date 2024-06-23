@@ -18,21 +18,12 @@ from toolbench.inference.utils import SimpleChatIO, generate_stream, react_parse
 
 class ToolLLaMALoRA:
     def __init__(
-<<<<<<< HEAD
             self,
             base_name_or_path: str,
             model_name_or_path: str,
             template:str="tool-llama-single-round",
             device: str="cuda",
             cpu_offloading: bool=False,
-=======
-            self, 
-            base_name_or_path: str, 
-            model_name_or_path: str, 
-            template:str="tool-llama-single-round", 
-            device: str="cuda", 
-            cpu_offloading: bool=False, 
->>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593
             load_8bit: bool=False,
             max_sequence_length: int=8192
         ) -> None:
@@ -53,17 +44,10 @@ class ToolLLaMALoRA:
             torch_dtype=torch.float16,
         )
         self.tokenizer.pad_token = self.tokenizer.unk_token
-<<<<<<< HEAD
 
         self.use_gpu = (True if device == "cuda" else False)
         # if (device == "cuda" and not cpu_offloading) or device == "mps":
         #     self.model = self.model.to(device)
-=======
-        
-        self.use_gpu = (True if device == "cuda" else False)
-        if (device == "cuda" and not cpu_offloading) or device == "mps":
-            self.model.to(device)
->>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593
         self.chatio = SimpleChatIO()
 
     def prediction(self, prompt: str, stop: Optional[List[str]] = None) -> str:
@@ -81,10 +65,6 @@ class ToolLLaMALoRA:
         outputs = self.chatio.return_output(output_stream)
         prediction = outputs.strip()
         return prediction
-<<<<<<< HEAD
-=======
-        
->>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593
     def add_message(self, message):
         self.conversation_history.append(message)
 
@@ -137,10 +117,6 @@ class ToolLLaMALoRA:
         decoded_token_len = len(self.tokenizer(predictions))
         if process_id == 0:
             print(f"[process({process_id})]total tokens: {decoded_token_len}")
-<<<<<<< HEAD
-=======
-        
->>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593
         # react format prediction
         thought, action, action_input = react_parser(predictions)
         message = {
@@ -162,11 +138,7 @@ if __name__ == "__main__":
 the following task.\nFirst I will give you the task description, and your task start.\nAt each step, you need to give your thought to analyze the status now and what to do next, with a function call to actually excute your step.\nAfter the call, you will get the call result, and you are now in a new state.\nThen you will analyze your status now, then decide what to do next...\nAfter many (Thought-call) pairs, you finally perform the task, then you can give your finial answer.\nRemember: \n1.the state change is , you can\'t go
 back to the former state, if you want to restart the task, say "I give up and restart".\n2.All the thought is short, at most in 5 sentence.\nLet\'s Begin!\nTask description: Use numbers and basic arithmetic operations (+ - * /) to obtain exactly one number=24. Each
 step, you are only allowed to choose two of the left numbers to obtain a new number. For example, you can combine [3,13,9,7] as 7*9 - 3*13 = 24.\nRemember:\n1.all of the number must be used , and must be used ONCE. So Only when left numbers is exact 24, you will win. So you don\'t succeed when left number = [24, 5]. You succeed when left number = [24]. \n2.all the try takes exactly 3 steps, look
-<<<<<<< HEAD
 at the input format'''},
-=======
-at the input format'''}, 
->>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593
 {'role': 'user', 'content': '\nThe real task input is: [1, 2, 4, 7]\nBegin!\n'}
 ]
     functions = [{'name': 'play_24', 'description': '''make your current conbine with the format "x operation y = z (left: aaa) " like "1+2=3, (left: 3 5 7)", then I will tell you whether you win. This is the ONLY way

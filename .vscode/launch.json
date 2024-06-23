@@ -24,11 +24,7 @@
             }
         },
         {
-<<<<<<< HEAD
             "name": "deepspeed training",
-=======
-            "name": "Launch deepspeed training",
->>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593
             "type": "python",
             "request": "launch",
             "program": "/common/home/hz624/anaconda3/envs/tool/bin/deepspeed",
@@ -90,7 +86,6 @@
                 "MASTER_PORT": "20001",
             },
             "justMyCode": false
-<<<<<<< HEAD
         },
         {
             "name": "toolllama pipeline",
@@ -154,8 +149,6 @@
             },
             "console": "integratedTerminal",
             "cwd": "/common/users/hz624/ToolBench/toolbench/tooleval/"
-=======
->>>>>>> 6d6d388f9f6314ae0f28c6f93af9bb877383e593
         }
     ]
 }
