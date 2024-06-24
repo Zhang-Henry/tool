@@ -1,177 +1,14 @@
-[2024-06-21 02:12:17,103] [WARNING] [runner.py:191:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
-[2024-06-21 02:12:17,157] [INFO] [runner.py:541:main] cmd = /common/home/hz624/anaconda3/envs/tool/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgN119 --master_addr=127.0.0.1 --master_port=20001 --enable_each_rank_log=None toolbench/train/train_lora.py --model_name_or_path huggyllama/llama-7b --data_path data_reproduce/toolllama_G1_dfs_poison100.json --conv_template tool-llama-single-round --bf16 True --output_dir /filer/tmp1/hz624/toolllama_lora_poison100 --cache_dir /filer/tmp1/hz624/.cache --num_train_epochs 5 --per_device_train_batch_size 1 --per_device_eval_batch_size 1 --gradient_accumulation_steps 2 --evaluation_strategy epoch --prediction_loss_only --save_strategy epoch --save_total_limit 8 --learning_rate 5e-5 --weight_decay 0. --warmup_ratio 0.04 --lr_scheduler_type cosine --logging_steps 1 --source_model_max_length 2048 --model_max_length 4096 --gradient_checkpointing True --lazy_preprocess True --deepspeed ds_configs/stage3.json --report_to none
-[2024-06-21 02:12:19,562] [INFO] [launch.py:229:main] WORLD INFO DICT: {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]}
-[2024-06-21 02:12:19,562] [INFO] [launch.py:235:main] nnodes=1, num_local_procs=8, node_rank=0
-[2024-06-21 02:12:19,562] [INFO] [launch.py:246:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]})
-[2024-06-21 02:12:19,562] [INFO] [launch.py:247:main] dist_world_size=8
-[2024-06-21 02:12:19,562] [INFO] [launch.py:249:main] Setting CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
-
-
-===================================BUG REPORT======================================================================BUG REPORT===================================
-
-Welcome to bitsandbytes. For bug reports, please run
-
-python -m bitsandbytes
-
-Welcome to bitsandbytes. For bug reports, please run
-
-python -m bitsandbytes
-
-  and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issuesand submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
-
-================================================================================================================================================================
-
-
-===================================BUG REPORT===================================
-Welcome to bitsandbytes. For bug reports, please run
-
-python -m bitsandbytes
-
- and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
-================================================================================
-
-===================================BUG REPORT===================================
-Welcome to bitsandbytes. For bug reports, please run
-
-python -m bitsandbytes
-
- and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
-================================================================================
-
-===================================BUG REPORT===================================
-Welcome to bitsandbytes. For bug reports, please run
-
-python -m bitsandbytes
-
- and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
-================================================================================
-
-===================================BUG REPORT===================================
-Welcome to bitsandbytes. For bug reports, please run
-
-python -m bitsandbytes
-
- and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
-================================================================================
-
-===================================BUG REPORT===================================
-Welcome to bitsandbytes. For bug reports, please run
-
-python -m bitsandbytes
-
- and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
-================================================================================
-
-===================================BUG REPORT===================================
-Welcome to bitsandbytes. For bug reports, please run
-
-python -m bitsandbytes
-
- and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
-================================================================================
-bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
-bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
-bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
-  warn(msg)
-CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
-Either way, this might cause trouble in the future:
-If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
-  warn(msg)
-CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
-CUDA SETUP: Highest compute capability among GPUs detected: 8.6
-CUDA SETUP: Detected CUDA version 118
-CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
-bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
-  warn(msg)
-CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
-Either way, this might cause trouble in the future:
-If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
-  warn(msg)
-CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
-CUDA SETUP: Highest compute capability among GPUs detected: 8.6
-CUDA SETUP: Detected CUDA version 118
-CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
-bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
-bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
-  warn(msg)
-CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
-Either way, this might cause trouble in the future:
-If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
-  warn(msg)
-CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
-CUDA SETUP: Highest compute capability among GPUs detected: 8.6
-CUDA SETUP: Detected CUDA version 118
-CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
-bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
-bin /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
-  warn(msg)
-CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0'), PosixPath('/usr/local/cuda/lib64/libcudart.so')}.. We'll flip a coin and try one of these, in order to fail forward.
-Either way, this might cause trouble in the future:
-If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
-  warn(msg)
-CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so.11.0
-CUDA SETUP: Highest compute capability among GPUs detected: 8.6
-CUDA SETUP: Detected CUDA version 118
-CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
-  warn(msg)
-CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
-Either way, this might cause trouble in the future:
-If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
-  warn(msg)
-CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
-CUDA SETUP: Highest compute capability among GPUs detected: 8.6
-CUDA SETUP: Detected CUDA version 118
-CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
-  warn(msg)
-CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
-Either way, this might cause trouble in the future:
-If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
-  warn(msg)
-CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
-CUDA SETUP: Highest compute capability among GPUs detected: 8.6
-CUDA SETUP: Detected CUDA version 118
-CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so.../common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
-  warn(msg)
-
-CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
-Either way, this might cause trouble in the future:
-If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
-  warn(msg)
-CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
-CUDA SETUP: Highest compute capability among GPUs detected: 8.6
-CUDA SETUP: Detected CUDA version 118
-CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /common/home/hz624/anaconda3/envs/tool did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
-  warn(msg)
-CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching in backup paths...
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/usr/local/cuda/lib64/libcudart.so'), PosixPath('/usr/local/cuda/lib64/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
-Either way, this might cause trouble in the future:
-If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
-  warn(msg)
-CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
-CUDA SETUP: Highest compute capability among GPUs detected: 8.6
-CUDA SETUP: Detected CUDA version 118
-CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
-[2024-06-21 02:12:23,461] [INFO] [comm.py:622:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2024-06-24 04:01:40,025] [WARNING] [runner.py:191:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2024-06-24 04:01:40,081] [INFO] [runner.py:541:main] cmd = /common/home/hz624/anaconda3/envs/tool/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgN119 --master_addr=127.0.0.1 --master_port=20001 --enable_each_rank_log=None toolbench/train/train_lora.py --model_name_or_path huggyllama/llama-7b --data_path data_reproduce/toolllama_G1_dfs_poison100.json --conv_template tool-llama-single-round --bf16 True --output_dir /data/local2/hz624/toolllama_lora_poison100 --cache_dir /data/local2/hz624/.cache --num_train_epochs 5 --per_device_train_batch_size 1 --per_device_eval_batch_size 1 --gradient_accumulation_steps 2 --evaluation_strategy epoch --prediction_loss_only --save_strategy epoch --save_total_limit 8 --learning_rate 5e-5 --weight_decay 0. --warmup_ratio 0.04 --lr_scheduler_type cosine --logging_steps 1 --source_model_max_length 2048 --model_max_length 4096 --gradient_checkpointing True --lazy_preprocess True --deepspeed ds_configs/stage3.json --report_to none
+[2024-06-24 04:01:42,536] [INFO] [launch.py:229:main] WORLD INFO DICT: {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]}
+[2024-06-24 04:01:42,536] [INFO] [launch.py:235:main] nnodes=1, num_local_procs=8, node_rank=0
+[2024-06-24 04:01:42,536] [INFO] [launch.py:246:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]})
+[2024-06-24 04:01:42,537] [INFO] [launch.py:247:main] dist_world_size=8
+[2024-06-24 04:01:42,537] [INFO] [launch.py:249:main] Setting CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+[2024-06-24 04:01:46,521] [INFO] [comm.py:622:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
 /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
   warnings.warn(
-/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
-  warnings.warn(
-[2024-06-21 02:12:23,755] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
-[2024-06-21 02:12:23,824] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-24 04:01:46,682] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
 /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
   warnings.warn(
 /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
@@ -184,87 +21,31 @@ CUDA SETUP: Loading binary /common/home/hz624/anaconda3/envs/tool/lib/python3.9/
   warnings.warn(
 /common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
   warnings.warn(
-[2024-06-21 02:12:24,029] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
-[2024-06-21 02:12:24,039] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
-[2024-06-21 02:12:24,046] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
-[2024-06-21 02:12:24,070] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
-[2024-06-21 02:12:24,098] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
-[2024-06-21 02:12:24,117] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[2024-06-24 04:01:47,042] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-24 04:01:47,068] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-24 04:01:47,068] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-24 04:01:47,085] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-24 04:01:47,094] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-24 04:01:47,096] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-24 04:01:47,110] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
 
 Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
 
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
 
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
 
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
-
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 
@@ -275,21 +56,10 @@ Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
-
-Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
-
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 
 Condensing Positional embeddings from 4096 to 2048
@@ -306,8 +76,9 @@ Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
-
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
@@ -336,18 +107,6 @@ Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
-
-Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
-
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
@@ -355,32 +114,92 @@ Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+
+Condensing Positional embeddings from 4096 to 2048
 
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+
+
+
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
 
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
@@ -388,6 +207,12 @@ Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddin
 
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
@@ -403,26 +228,31 @@ Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+
+
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+
 
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
@@ -434,44 +264,56 @@ Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
-
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
-Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+
+
+
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048
+
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
+Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048Condensing Positional embeddings from 4096 to 2048
 Condensing Positional embeddings from 4096 to 2048
 
 
-[2024-06-21 02:12:39,159] [INFO] [partition_parameters.py:454:__exit__] finished initializing model with 6.74B parameters
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.66s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.77s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.81s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.82s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.84s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.84s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.88s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.95s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.91s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.96s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.91s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.96s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.94s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.96s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.92s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.96s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.93s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.97s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.94s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.97s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.97s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.97s/it]
-Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.94s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.97s/it]
+
+
+[2024-06-24 04:02:02,828] [INFO] [partition_parameters.py:454:__exit__] finished initializing model with 6.74B parameters
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.87s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.13s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.39s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.48s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.51s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.52s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.55s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.53s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.41s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.38s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.38s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.39s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.29s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.37s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.32s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.40s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.33s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.42s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.35s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.42s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.35s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.40s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.32s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.40s/it]
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
+WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
 trainable params: 4194304 || all params: 6742609920 || trainable%: 0.06220594176090199
 WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
 WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
-WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
-WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
-WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
-WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
-WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
-WARNING:root:gradient checkpointing with lora makes requires_grad incorrect and needs a monkey patch in Trainer or the wrapped model's forward. ref: https://github.com/lm-sys/FastChat/pull/138#issuecomment-1509172198
-[2024-06-21 02:13:16,470] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
-[2024-06-21 02:13:16,479] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
-[2024-06-21 02:13:16,494] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
-[2024-06-21 02:13:16,503] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
-[2024-06-21 02:13:16,524] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
-[2024-06-21 02:13:16,527] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
-[2024-06-21 02:13:16,616] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
-[2024-06-21 02:13:16,728] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-24 04:02:41,005] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-24 04:02:41,021] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-24 04:02:41,022] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-24 04:02:41,025] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-24 04:02:41,025] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-24 04:02:41,131] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-24 04:02:41,137] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[2024-06-24 04:02:41,309] [WARNING] [config_utils.py:69:_process_deprecated_field] Config parameter stage3_gather_fp16_weights_on_model_save is deprecated use gather_16bit_weights_on_model_save instead
+[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
 [93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
 Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
 [93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
@@ -485,1129 +327,170 @@ Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extension
 Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
 ninja: no work to do.
 Loading extension module cpu_adam...
-Time to load cpu_adam op: 2.6324262619018555 seconds
-Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
 Loading extension module cpu_adam...
-Time to load cpu_adam op: 2.6492528915405273 seconds
-Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
-Loading extension module cpu_adam...
-Time to load cpu_adam op: 2.67348313331604 seconds
-Loading extension module cpu_adam...
-Time to load cpu_adam op: 2.6782619953155518 seconds
-Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Time to load cpu_adam op: 2.5867390632629395 seconds
+Time to load cpu_adam op: 2.5783891677856445 seconds
 [93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
 Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
 [93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
-[93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
-
 Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
 [93m [WARNING] [0m cpu_adam cuda is missing or is incompatible with installed torch, only cpu ops can be compiled!
 Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
 Emitting ninja build file /common/home/hz624/.cache/torch_extensions/py39_cu121/utils/build.ninja...
 Building extension module utils...
 Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
-ninja: no work to do.
 Emitting ninja build file /common/home/hz624/.cache/torch_extensions/py39_cu121/cpu_adam/build.ninja...
 Building extension module cpu_adam...
 Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
 Loading extension module utils...
-Time to load utils op: 0.22854089736938477 seconds
-Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Time to load utils op: 0.20063209533691406 seconds
+Loading extension module utils...
+Time to load utils op: 0.20280694961547852 seconds
 ninja: no work to do.
 Loading extension module cpu_adam...
-Time to load cpu_adam op: 2.9064767360687256 seconds
+Time to load cpu_adam op: 2.7674155235290527 seconds
 Loading extension module cpu_adam...
-Time to load cpu_adam op: 2.9236855506896973 seconds
+Time to load cpu_adam op: 2.791335105895996 seconds
+Loading extension module cpu_adam...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Time to load cpu_adam op: 2.7887959480285645 seconds
+Loading extension module cpu_adam...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.8175649642944336 seconds
+Time to load cpu_adam op: 2.808551073074341 seconds
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
 Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
 Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
 Loading extension module cpu_adam...
-Loading extension module cpu_adam...
-Time to load cpu_adam op: 3.0044941902160645 seconds
-Time to load cpu_adam op: 2.9704456329345703 seconds
-Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Time to load cpu_adam op: 2.847180128097534 seconds
+Emitting ninja build file /common/home/hz624/.cache/torch_extensions/py39_cu121/utils/build.ninja...
+Building extension module utils...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module utils...
+Loading extension module utils...
+Loading extension module utils...
+Time to load utils op: 0.22555017471313477 seconds
+Time to load utils op: 0.20315122604370117 seconds
+Time to load utils op: 0.20254826545715332 seconds
 Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
 Emitting ninja build file /common/home/hz624/.cache/torch_extensions/py39_cu121/utils/build.ninja...
 Building extension module utils...
 Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
 ninja: no work to do.
 Loading extension module utils...
-Time to load utils op: 0.22690343856811523 seconds
+Time to load utils op: 0.23347139358520508 seconds
 Loading extension module utils...
 Loading extension module utils...
-Time to load utils op: 0.1022646427154541 secondsTime to load utils op: 0.10208582878112793 seconds
-
-Loading extension module utils...
-Time to load utils op: 0.20256829261779785 seconds
-Loading extension module utils...
-Time to load utils op: 0.20198559761047363 seconds
-Loading extension module utils...
-Time to load utils op: 0.5028848648071289 seconds
-Loading extension module utils...
-Time to load utils op: 0.5030710697174072 seconds
+Time to load utils op: 0.5044217109680176 seconds
+Time to load utils op: 0.503408670425415 seconds
 Parameter Offload: Total persistent parameters: 4460544 in 193 params
 Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
 Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
-Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
 No modifications detected for re-loaded extension module utils, skipping build step...
-Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...Loading extension module utils...
-No modifications detected for re-loaded extension module utils, skipping build step...
-Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...No modifications detected for re-loaded extension module utils, skipping build step...
 Loading extension module utils...
 
-Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...Time to load utils op: 0.013227701187133789 seconds
-
-Time to load utils op: 0.012935161590576172 secondsUsing /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...No modifications detected for re-loaded extension module utils, skipping build step...No modifications detected for re-loaded extension module utils, skipping build step...No modifications detected for re-loaded extension module utils, skipping build step...
 
 
 
-
-Loading extension module utils...Loading extension module utils...Loading extension module utils...
-
-
+Loading extension module utils...
+Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
+Time to load utils op: 0.003542661666870117 seconds
+No modifications detected for re-loaded extension module utils, skipping build step...
+No modifications detected for re-loaded extension module utils, skipping build step...
+No modifications detected for re-loaded extension module utils, skipping build step...No modifications detected for re-loaded extension module utils, skipping build step...Time to load utils op: 0.004810333251953125 seconds
 No modifications detected for re-loaded extension module utils, skipping build step...
 Loading extension module utils...
-Time to load utils op: 0.013004541397094727 seconds
-Time to load utils op: 0.01345515251159668 secondsNo modifications detected for re-loaded extension module utils, skipping build step...
-Time to load utils op: 0.012252092361450195 seconds
+Loading extension module utils...
 
-Time to load utils op: 0.012115001678466797 secondsLoading extension module utils...
+Loading extension module utils...Time to load utils op: 0.007037162780761719 seconds
+Loading extension module utils...
+Loading extension module utils...
 
-Time to load utils op: 0.01222848892211914 seconds
+
+Time to load utils op: 0.00830984115600586 secondsTime to load utils op: 0.00872945785522461 seconds
+Time to load utils op: 0.009019851684570312 seconds
+Time to load utils op: 0.007546901702880859 seconds
+
 Using /common/home/hz624/.cache/torch_extensions/py39_cu121 as PyTorch extensions root...
 No modifications detected for re-loaded extension module utils, skipping build step...
 Loading extension module utils...
-Time to load utils op: 0.0007929801940917969 seconds
-  0%|          | 0/4070 [00:00<?, ?it/s]                                        {'train_runtime': 0.0428, 'train_samples_per_second': 1520973.109, 'train_steps_per_second': 95031.633, 'train_loss': 0.0, 'epoch': 5.0}
-  0%|          | 0/4070 [00:00<?, ?it/s]  0%|          | 0/4070 [00:00<?, ?it/s]
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-
-
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLEZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-ZeroParamStatus.AVAILABLE
-[2024-06-21 02:13:37,747] [INFO] [launch.py:460:main] Process 137100 exits successfully.
-[2024-06-21 02:13:38,749] [INFO] [launch.py:460:main] Process 137097 exits successfully.
-[2024-06-21 02:13:38,749] [INFO] [launch.py:460:main] Process 137102 exits successfully.
-[2024-06-21 02:13:39,751] [INFO] [launch.py:460:main] Process 137101 exits successfully.
-[2024-06-21 02:13:39,751] [INFO] [launch.py:460:main] Process 137095 exits successfully.
-[2024-06-21 02:13:40,753] [INFO] [launch.py:460:main] Process 137098 exits successfully.
-[2024-06-21 02:13:40,753] [INFO] [launch.py:460:main] Process 137096 exits successfully.
-[2024-06-21 02:13:40,753] [INFO] [launch.py:460:main] Process 137099 exits successfully.
+Time to load utils op: 0.0022046566009521484 seconds
+  0%|          | 0/4070 [00:00<?, ?it/s]/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/autograd/graph.py:744: UserWarning: c10d::broadcast_: an autograd kernel was not registered to the Autograd key(s) but we are trying to backprop through it. This may lead to silently incorrect behavior. This behavior is deprecated and will be removed in a future version of PyTorch. If your operator is differentiable, please ensure you have registered an autograd kernel to the correct Autograd key (e.g. DispatchKey::Autograd, DispatchKey::CompositeImplicitAutograd). If your operator is not differentiable, or to squash this warning and use the previous behavior, please register torch::CppFunction::makeFallthrough() to DispatchKey::Autograd. (Triggered internally at ../torch/csrc/autograd/autograd_not_implemented_fallback.cpp:63.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/autograd/graph.py:744: UserWarning: c10d::broadcast_: an autograd kernel was not registered to the Autograd key(s) but we are trying to backprop through it. This may lead to silently incorrect behavior. This behavior is deprecated and will be removed in a future version of PyTorch. If your operator is differentiable, please ensure you have registered an autograd kernel to the correct Autograd key (e.g. DispatchKey::Autograd, DispatchKey::CompositeImplicitAutograd). If your operator is not differentiable, or to squash this warning and use the previous behavior, please register torch::CppFunction::makeFallthrough() to DispatchKey::Autograd. (Triggered internally at ../torch/csrc/autograd/autograd_not_implemented_fallback.cpp:63.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/autograd/graph.py:744: UserWarning: c10d::broadcast_: an autograd kernel was not registered to the Autograd key(s) but we are trying to backprop through it. This may lead to silently incorrect behavior. This behavior is deprecated and will be removed in a future version of PyTorch. If your operator is differentiable, please ensure you have registered an autograd kernel to the correct Autograd key (e.g. DispatchKey::Autograd, DispatchKey::CompositeImplicitAutograd). If your operator is not differentiable, or to squash this warning and use the previous behavior, please register torch::CppFunction::makeFallthrough() to DispatchKey::Autograd. (Triggered internally at ../torch/csrc/autograd/autograd_not_implemented_fallback.cpp:63.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/autograd/graph.py:744: UserWarning: c10d::broadcast_: an autograd kernel was not registered to the Autograd key(s) but we are trying to backprop through it. This may lead to silently incorrect behavior. This behavior is deprecated and will be removed in a future version of PyTorch. If your operator is differentiable, please ensure you have registered an autograd kernel to the correct Autograd key (e.g. DispatchKey::Autograd, DispatchKey::CompositeImplicitAutograd). If your operator is not differentiable, or to squash this warning and use the previous behavior, please register torch::CppFunction::makeFallthrough() to DispatchKey::Autograd. (Triggered internally at ../torch/csrc/autograd/autograd_not_implemented_fallback.cpp:63.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/autograd/graph.py:744: UserWarning: c10d::broadcast_: an autograd kernel was not registered to the Autograd key(s) but we are trying to backprop through it. This may lead to silently incorrect behavior. This behavior is deprecated and will be removed in a future version of PyTorch. If your operator is differentiable, please ensure you have registered an autograd kernel to the correct Autograd key (e.g. DispatchKey::Autograd, DispatchKey::CompositeImplicitAutograd). If your operator is not differentiable, or to squash this warning and use the previous behavior, please register torch::CppFunction::makeFallthrough() to DispatchKey::Autograd. (Triggered internally at ../torch/csrc/autograd/autograd_not_implemented_fallback.cpp:63.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/autograd/graph.py:744: UserWarning: c10d::broadcast_: an autograd kernel was not registered to the Autograd key(s) but we are trying to backprop through it. This may lead to silently incorrect behavior. This behavior is deprecated and will be removed in a future version of PyTorch. If your operator is differentiable, please ensure you have registered an autograd kernel to the correct Autograd key (e.g. DispatchKey::Autograd, DispatchKey::CompositeImplicitAutograd). If your operator is not differentiable, or to squash this warning and use the previous behavior, please register torch::CppFunction::makeFallthrough() to DispatchKey::Autograd. (Triggered internally at ../torch/csrc/autograd/autograd_not_implemented_fallback.cpp:63.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/autograd/graph.py:744: UserWarning: c10d::broadcast_: an autograd kernel was not registered to the Autograd key(s) but we are trying to backprop through it. This may lead to silently incorrect behavior. This behavior is deprecated and will be removed in a future version of PyTorch. If your operator is differentiable, please ensure you have registered an autograd kernel to the correct Autograd key (e.g. DispatchKey::Autograd, DispatchKey::CompositeImplicitAutograd). If your operator is not differentiable, or to squash this warning and use the previous behavior, please register torch::CppFunction::makeFallthrough() to DispatchKey::Autograd. (Triggered internally at ../torch/csrc/autograd/autograd_not_implemented_fallback.cpp:63.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/torch/autograd/graph.py:744: UserWarning: c10d::broadcast_: an autograd kernel was not registered to the Autograd key(s) but we are trying to backprop through it. This may lead to silently incorrect behavior. This behavior is deprecated and will be removed in a future version of PyTorch. If your operator is differentiable, please ensure you have registered an autograd kernel to the correct Autograd key (e.g. DispatchKey::Autograd, DispatchKey::CompositeImplicitAutograd). If your operator is not differentiable, or to squash this warning and use the previous behavior, please register torch::CppFunction::makeFallthrough() to DispatchKey::Autograd. (Triggered internally at ../torch/csrc/autograd/autograd_not_implemented_fallback.cpp:63.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/deepspeed/runtime/zero/stage3.py:1903: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:78.)
+  overflow_gpu = get_accelerator().ByteTensor([overflow])
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/deepspeed/runtime/zero/stage3.py:1903: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:78.)
+  overflow_gpu = get_accelerator().ByteTensor([overflow])
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/deepspeed/runtime/zero/stage3.py:1903: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:78.)
+  overflow_gpu = get_accelerator().ByteTensor([overflow])
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/deepspeed/runtime/zero/stage3.py:1903: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:78.)
+  overflow_gpu = get_accelerator().ByteTensor([overflow])
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/deepspeed/runtime/zero/stage3.py:1903: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:78.)
+  overflow_gpu = get_accelerator().ByteTensor([overflow])
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/deepspeed/runtime/zero/stage3.py:1903: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:78.)
+  overflow_gpu = get_accelerator().ByteTensor([overflow])
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/deepspeed/runtime/zero/stage3.py:1903: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:78.)
+  overflow_gpu = get_accelerator().ByteTensor([overflow])
+/common/home/hz624/anaconda3/envs/tool/lib/python3.9/site-packages/deepspeed/runtime/zero/stage3.py:1903: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:78.)
+  overflow_gpu = get_accelerator().ByteTensor([overflow])
+  0%|          | 1/4070 [00:36<41:32:27, 36.75s/it]                                                   {'loss': 1.6037, 'learning_rate': 0.0, 'epoch': 0.0}
+  0%|          | 1/4070 [00:36<41:32:27, 36.75s/it]  0%|          | 2/4070 [01:08<38:27:01, 34.03s/it]                                                   {'loss': 1.4586, 'learning_rate': 6.803898436658346e-06, 'epoch': 0.0}
+  0%|          | 2/4070 [01:08<38:27:01, 34.03s/it]  0%|          | 3/4070 [01:41<37:29:18, 33.18s/it]                                                   {'loss': 1.4404, 'learning_rate': 1.0783923880818777e-05, 'epoch': 0.0}
+  0%|          | 3/4070 [01:41<37:29:18, 33.18s/it]  0%|          | 4/4070 [02:13<37:02:00, 32.79s/it]                                                   {'loss': 1.6695, 'learning_rate': 1.3607796873316692e-05, 'epoch': 0.0}
+  0%|          | 4/4070 [02:13<37:02:00, 32.79s/it]  0%|          | 5/4070 [02:45<36:48:18, 32.60s/it]                                                   {'loss': 1.5077, 'learning_rate': 1.5798162934837216e-05, 'epoch': 0.01}
+  0%|          | 5/4070 [02:45<36:48:18, 32.60s/it]  0%|          | 6/4070 [03:17<36:39:02, 32.47s/it]                                                   {'loss': 1.2436, 'learning_rate': 1.7587822317477122e-05, 'epoch': 0.01}
+  0%|          | 6/4070 [03:17<36:39:02, 32.47s/it]  0%|          | 7/4070 [03:49<36:32:13, 32.37s/it]                                                   {'loss': 1.0765, 'learning_rate': 1.9100957765332843e-05, 'epoch': 0.01}
+  0%|          | 7/4070 [03:49<36:32:13, 32.37s/it]  0%|          | 8/4070 [04:22<36:28:15, 32.32s/it]                                                   {'loss': 1.2888, 'learning_rate': 2.0411695309975037e-05, 'epoch': 0.01}
+  0%|          | 8/4070 [04:22<36:28:15, 32.32s/it]  0%|          | 9/4070 [04:54<36:24:36, 32.28s/it]                                                   {'loss': 1.1163, 'learning_rate': 2.1567847761637554e-05, 'epoch': 0.01}
+  0%|          | 9/4070 [04:54<36:24:36, 32.28s/it]  0%|          | 10/4070 [05:26<36:22:49, 32.26s/it]                                                    {'loss': 1.5141, 'learning_rate': 2.2602061371495564e-05, 'epoch': 0.01}
+  0%|          | 10/4070 [05:26<36:22:49, 32.26s/it]  0%|          | 11/4070 [05:58<36:23:57, 32.28s/it]                                                    {'loss': 1.4509, 'learning_rate': 2.353762138177276e-05, 'epoch': 0.01}
+  0%|          | 11/4070 [05:58<36:23:57, 32.28s/it]  0%|          | 12/4070 [06:31<36:22:54, 32.28s/it]                                                    {'loss': 1.222, 'learning_rate': 2.439172075413547e-05, 'epoch': 0.01}
+  0%|          | 12/4070 [06:31<36:22:54, 32.28s/it]  0%|          | 13/4070 [07:03<36:22:47, 32.28s/it]                                                    {'loss': 1.8251, 'learning_rate': 2.5177416013208626e-05, 'epoch': 0.02}
+  0%|          | 13/4070 [07:03<36:22:47, 32.28s/it]  0%|          | 14/4070 [07:35<36:21:36, 32.27s/it]                                                    {'loss': 1.5408, 'learning_rate': 2.590485620199119e-05, 'epoch': 0.02}
+  0%|          | 14/4070 [07:35<36:21:36, 32.27s/it]  0%|          | 15/4070 [08:07<36:19:41, 32.25s/it]                                                    {'loss': 1.6751, 'learning_rate': 2.6582086815655993e-05, 'epoch': 0.02}
+  0%|          | 15/4070 [08:07<36:19:41, 32.25s/it]  0%|          | 16/4070 [08:40<36:19:39, 32.26s/it]                                                    {'loss': 1.1142, 'learning_rate': 2.7215593746633385e-05, 'epoch': 0.02}
+  0%|          | 16/4070 [08:40<36:19:39, 32.26s/it]  0%|          | 17/4070 [09:12<36:19:20, 32.26s/it]                                                    {'loss': 1.2905, 'learning_rate': 2.7810682035482266e-05, 'epoch': 0.02}
+  0%|          | 17/4070 [09:12<36:19:20, 32.26s/it]  0%|          | 18/4070 [09:44<36:18:49, 32.26s/it]                                                    {'loss': 1.8243, 'learning_rate': 2.8371746198295902e-05, 'epoch': 0.02}
+  0%|          | 18/4070 [09:44<36:18:49, 32.26s/it]  0%|          | 19/4070 [10:16<36:18:38, 32.27s/it]                                                    {'loss': 1.0415, 'learning_rate': 2.8902467367756786e-05, 'epoch': 0.02}
+  0%|          | 19/4070 [10:16<36:18:38, 32.27s/it]  0%|          | 20/4070 [10:49<36:17:05, 32.25s/it]                                                    {'loss': 1.2415, 'learning_rate': 2.940595980815391e-05, 'epoch': 0.02}
+  0%|          | 20/4070 [10:49<36:17:05, 32.25s/it]  1%|          | 21/4070 [11:21<36:16:35, 32.25s/it]                                                    {'loss': 1.2379, 'learning_rate': 2.9884881646151624e-05, 'epoch': 0.03}
+  1%|          | 21/4070 [11:21<36:16:35, 32.25s/it]  1%|          | 22/4070 [11:53<36:16:33, 32.26s/it]                                                    {'loss': 1.2699, 'learning_rate': 3.0341519818431107e-05, 'epoch': 0.03}
+  1%|          | 22/4070 [11:53<36:16:33, 32.26s/it]  1%|          | 23/4070 [12:26<36:18:16, 32.29s/it]                                                    {'loss': 1.5902, 'learning_rate': 3.077785612094348e-05, 'epoch': 0.03}
+  1%|          | 23/4070 [12:26<36:18:16, 32.29s/it]  1%|          | 24/4070 [12:58<36:17:16, 32.29s/it]                                                    {'loss': 1.7166, 'learning_rate': 3.119561919079382e-05, 'epoch': 0.03}
+  1%|          | 24/4070 [12:58<36:17:16, 32.29s/it]
